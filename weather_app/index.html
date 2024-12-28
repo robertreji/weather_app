@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+</head>
+<body class="bg-neutral-950  w-screen h-screen">
+
+    <div  class="w-full   h-full   flex justify-center items-center">
+        <div class="h-2/3 w-1/4 text-white  rounded-3xl bg-neutral-800 bg-gradient-to-b from-green-400 via-teal-500 to-blue-400 ">
+            <div class="w-full h-[15%]  rounded-t-3xl flex justify-center items-center pt-5" >
+               <input type="text" class=" rounded-3xl h-[50px] text-black pl-5" placeholder="  enter the city name">
+               <button class=" bg-white border-2 rounded-full h-14 w-14 ml-6 "><img src="./weather-app-img/images/search.png" class="h-6 pl-4" alt=""></button>
+            </div>
+            <div class=" w-full h-[60%] flex flex-col">
+                <div class="w-full h-1/2 flex justify-center items-center ">
+                    <img src="./weather-app-img/images/clear.png" alt="">                
+                </div>
+                <div class="w-full h-1/2  flex justify-center items-center flex-col font-bold">
+                  <p class="text-6xl" id="temp">1 °C</p>
+                  <p class="text-5xl pt-7" id="city">Berlin</p>
+                </div>
+            </div>
+            <div class=" w-full h-[25%] rounded-b-3xl flex ">
+                <div class="w-1/2 h-full flex flex-col  pt-9 pl-7">
+                    <div class="flex">
+                        <i class="fa-solid fa-water fa-3x"></i>
+                        <p class="pl-3 text-3xl">90%</p>
+                    </div>
+                    <div>
+                        <p class="pl-16"> humidity</p>
+                    </div>    
+                </div>
+                <div class="w-1/2 h-full flex flex-col  pt-9 pl-4">
+                    <div class="flex">
+                        <i class="fa-solid fa-wind fa-3x"></i>
+                        <p class="pl-3 text-xl">2.68 km/km</p>
+                    </div>
+                    <div>
+                        <p class="pl-16 "> speed</p>
+                    </div>    
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>                    
